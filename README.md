@@ -63,6 +63,15 @@ uv run mcpapi-mcp
 
 ## Development
 
+### AI-Assisted Development
+
+For AI assistants (Claude Code, Codex, Cursor, etc.), see **[HANDOFF.md](HANDOFF.md)** for detailed instructions on:
+
+- Adding new API endpoints
+- Adding new MCP tools and resources
+- Testing patterns and conventions
+- File location reference
+
 ### Running Tests
 
 ```bash
@@ -88,6 +97,7 @@ McpApiBoilerplate/
 ├── pyproject.toml
 ├── uv.lock
 ├── CHANGELOG.md
+├── HANDOFF.md
 ├── README.md
 ├── .gitignore
 ├── .python-version

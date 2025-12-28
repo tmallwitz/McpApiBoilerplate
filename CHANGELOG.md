@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- AI handoff document (`HANDOFF.md`) with instructions for adding API endpoints and MCP tools
+
+### Changed
+
+- Refactored API to use router pattern for health endpoint
+
 ## [0.1.0] - 2025-12-28
 
 ### Added
