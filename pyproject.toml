@@ -1,0 +1,39 @@
+[project]
+name = "mcpapiboilerplate"
+version = "0.1.0"
+description = "FastAPI + FastMCP boilerplate"
+readme = "README.md"
+authors = [
+    { name = "Claude", email = "noreply@anthropic.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.128.0",
+    "fastmcp>=2.14.1",
+    "pydantic>=2.12.5",
+    "uvicorn[standard]>=0.40.0",
+]
+
+[project.scripts]
+mcpapi-serve = "mcpapiboilerplate.api.main:run"
+mcpapi-mcp = "mcpapiboilerplate.mcp.server:run"
+
+[build-system]
+requires = ["uv_build>=0.8.17,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.0.2",
+    "pytest-asyncio>=1.3.0",
+    "ruff>=0.14.10",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+src = ["src"]
